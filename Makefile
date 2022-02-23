@@ -1,4 +1,4 @@
-ks=https://raw.githubusercontent.com/JosiahKerley/homelab-kickstarts/master/centos/7/base.cfg
+ks=https://raw.githubusercontent.com/JosiahKerley/homelab-kickstarts/main/centos/7/base.cfg
 iso_url=http://mirror.den01.meanservers.net/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-NetInstall-2009.iso
 
 isos/autoinstall.iso: isos/orig.iso
