@@ -10,7 +10,7 @@ isos/autoinstall.iso: isos/orig.iso
 	  sudo umount tmp/mnt; \
 	  sudo chmod -R u+w tmp/new; \
 	  cd tmp/new; \
-	  sudo bash -c 'echo -e "default vesamenu.c32\ntimeout 600\nmenu title Autoinstall\nlabel install\nmenu default\nmenu label $(shell echo $(ks) | rev | cut -c -50 | rev)\nkernel vmlinuz\nappend initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 quiet ks=$(ks)" > isolinux/isolinux.cfg'; \
+	  sudo bash -c 'echo -e "default vesamenu.c32\ntimeout 600\nmenu title Autoinstall\nlabel install\nmenu default\nmenu label $(shell echo $(ks) | rev | cut -c -50 | rev)\nkernel vmlinuz\nappend initrd=initrd.img quiet ks=$(ks)" > isolinux/isolinux.cfg'; \
 	  sudo mkisofs \
 	    -o ../../autoinstall.iso \
 	    -b isolinux.bin \
